@@ -1,0 +1,3 @@
+Perl regex to replace all Latin characters with question marks: s/\p{Latin}/?/g
+
+echo 'asdf ghj kl' | perl -Mutf8 -CS -pe 's/\p{Latin}/\N{U+00BF}/g'
